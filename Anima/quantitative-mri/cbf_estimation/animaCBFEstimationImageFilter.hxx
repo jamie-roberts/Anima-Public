@@ -43,7 +43,7 @@ CBFEstimationImageFilter <InputPixelType,OutputPixelType>
     OutputImageIteratorType outItr(this->GetOutput(0),outputRegionForThread);
     
     IndexType currentIndex;
-    double logConstantValue = std::log(6.0e6) + std::log(m_LambdaParameter) - std::log(m_AlphaParameter) - std::log(m_BloodT1) - std::log(1.0 - std::exp(- m_LabelDuration / m_BloodT1));
+    double logConstantValue = std::log(6.0e6) + std::log(m_LambdaParameter) - std::log(2) - std::log(m_AlphaParameter) - std::log(m_BloodT1) - std::log(1.0 - std::exp(- m_LabelDuration / m_BloodT1));
 
     while (!inputItr.IsAtEnd())
     {
