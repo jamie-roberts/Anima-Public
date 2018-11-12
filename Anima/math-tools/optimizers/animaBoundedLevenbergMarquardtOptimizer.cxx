@@ -74,6 +74,7 @@ void BoundedLevenbergMarquardtOptimizer::StartOptimization()
     while (!stopConditionReached)
     {
         ++numIterations;
+        std::cout << numIterations << " " << m_LambdaParameter << std::endl;
 
         // Solve (JtJ + lambda I) x = - Jt r
         workMatrix = derivativeSquared;
