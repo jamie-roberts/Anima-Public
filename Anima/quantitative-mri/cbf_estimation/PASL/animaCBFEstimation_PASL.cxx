@@ -1,14 +1,14 @@
 #include <iostream>
 #include <tclap/CmdLine.h>
 
-#include <animaCBFEstimationImageFilter.h>
+#include <animaCBFEstimationImageFilter_PASL.h>
 #include <animaReadWriteFunctions.h>
 #include <itkTimeProbe.h>
 
 int main(int argc, char **argv)
 {
     TCLAP::CmdLine cmd("INRIA / IRISA - Visages Team", ' ',ANIMA_VERSION);
-	
+    
     TCLAP::ValueArg<std::string> inArg("i","input","Input average difference image",true,"","average difference image",cmd);
     TCLAP::ValueArg<std::string> maskArg("m","maskname","Computation mask",false,"","computation mask",cmd);
     TCLAP::ValueArg<std::string> outArg("o","output","CBF map",false,"","CBF map",cmd);
@@ -20,12 +20,12 @@ int main(int argc, char **argv)
     TCLAP::ValueArg<double> alphaArg("a","alpha","Labeling efficiency (default: 0.85)",false,0.85,"labeling efficiency",cmd);
     TCLAP::ValueArg<double> lambdaArg("l","lambda","Blood brain partition coefficient (default: 0.9)",false,0.9,"lambda parameter",cmd);
 
-    TCLAP::ValueArg<double> labelDurationArg("L","l-duration","Label duration (default: 1500 ms)",false,1500,"label duration",cmd);
-    TCLAP::ValueArg<double> postLabelingDelayArg("d","delay","Post labeling delay base (default: 1500 ms)",false,1500,"post labeling delay",cmd);
+    TCLAP::ValueArg<double> TI2Arg("w","ti2","TI2 base (default: 1700 ms)",false,1700,"TI2 base",cmd);
+    TCLAP::ValueArg<double> TI1Arg("v","ti1","TI1 (default: 500 ms)",false,500,"TI1",cmd);
     TCLAP::ValueArg<double> sliceDelayArg("s","slice-delay","Slice delay (default: 45 ms)",false,45,"slice delay",cmd);
 
     TCLAP::ValueArg<unsigned int> nbpArg("T","numberofthreads","Number of threads to run on (default : all cores)",false,itk::MultiThreader::GetGlobalDefaultNumberOfThreads(),"number of threads",cmd);
-	
+    
     try
     {
         cmd.parse(argc,argv);
@@ -36,16 +36,16 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
     
-    typedef anima::CBFEstimationImageFilter <double, double> FilterType;
+    typedef anima::CBFEstimationImageFilter_PASL <double, double> FilterType;
     
     FilterType::Pointer mainFilter = FilterType::New();
-	
+    
     mainFilter->SetInput(anima::readImage <FilterType::InputImageType> (inArg.getValue()));
     mainFilter->SetBloodT1(bloodT1Arg.getValue());
     mainFilter->SetAlphaParameter(alphaArg.getValue());
     mainFilter->SetLambdaParameter(lambdaArg.getValue());
-    mainFilter->SetLabelDuration(labelDurationArg.getValue());
-    mainFilter->SetBasePostLabelingDelay(postLabelingDelayArg.getValue());
+    mainFilter->SetBaseTI2(TI2Arg.getValue());
+    mainFilter->SetTI1(TI1Arg.getValue());
     mainFilter->SetSliceDelay(sliceDelayArg.getValue());
 
     if (maskArg.getValue() != "")

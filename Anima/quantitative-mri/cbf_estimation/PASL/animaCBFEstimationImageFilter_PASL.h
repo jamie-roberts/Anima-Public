@@ -9,12 +9,12 @@ namespace anima
  * @brief Implements simple CBF estimation for pCASL from a 3D volume and a set of acquisition related parameters
  */
 template <class InputPixelType, class OutputPixelType>
-class CBFEstimationImageFilter :
+class CBFEstimationImageFilter_PASL :
 public anima::MaskedImageToImageFilter < itk::Image <InputPixelType, 3>, itk::Image <OutputPixelType, 3> >
 {
 public:
     /** Standard class typedefs. */
-    typedef CBFEstimationImageFilter Self;
+    typedef CBFEstimationImageFilter_PASL Self;
     typedef itk::Image <InputPixelType, 3> InputImageType;
     typedef itk::Image <OutputPixelType, 3> OutputImageType;
     typedef anima::MaskedImageToImageFilter <InputImageType, OutputImageType> Superclass;
@@ -25,7 +25,7 @@ public:
     itkNewMacro(Self)
 
     /** Run-time type information (and related methods) */
-    itkTypeMacro(CBFEstimationImageFilter, anima::MaskedImageToImageFilter)
+    itkTypeMacro(CBFEstimationImageFilter_PASL, anima::MaskedImageToImageFilter)
 
     /** Image typedef support */
     typedef typename InputImageType::Pointer InputImagePointer;
@@ -39,27 +39,27 @@ public:
     itkSetMacro(BloodT1, double)
     itkSetMacro(AlphaParameter, double)
     itkSetMacro(LambdaParameter, double)
-    itkSetMacro(LabelDuration, double)
-    itkSetMacro(BasePostLabelingDelay, double)
+    itkSetMacro(BaseTI2, double)
+    itkSetMacro(TI1, double)
     itkSetMacro(SliceDelay, double)
 
     itkSetObjectMacro(M0Image, InputImageType)
     itkSetMacro(M0ConstantValue, double)
 
 protected:
-    CBFEstimationImageFilter()
+    CBFEstimationImageFilter_PASL()
     {
         m_BloodT1 = 1650;
         m_AlphaParameter = 0.85;
         m_LambdaParameter = 0.9;
-        m_LabelDuration = 1500;
-        m_BasePostLabelingDelay = 1500;
+        m_BaseTI2 = 1700;
+        m_TI1 = 500;
         m_SliceDelay = 45;
 
         m_M0ConstantValue = 1000;
     }
 
-    virtual ~CBFEstimationImageFilter()
+    virtual ~CBFEstimationImageFilter_PASL()
     {
     }
 
@@ -67,12 +67,12 @@ protected:
     void ThreadedGenerateData(const OutputImageRegionType &outputRegionForThread, itk::ThreadIdType threadId) ITK_OVERRIDE;
 
 private:
-    ITK_DISALLOW_COPY_AND_ASSIGN(CBFEstimationImageFilter);
+    ITK_DISALLOW_COPY_AND_ASSIGN(CBFEstimationImageFilter_PASL);
 
     double m_BloodT1;
     double m_AlphaParameter, m_LambdaParameter;
-    double m_LabelDuration;
-    double m_BasePostLabelingDelay;
+    double m_BaseTI2;
+    double m_TI1;
     double m_SliceDelay;
 
     InputImagePointer m_M0Image;
@@ -81,4 +81,4 @@ private:
 
 } // end namespace anima
 
-#include "animaCBFEstimationImageFilter.hxx"
+#include "animaCBFEstimationImageFilter_PASL.hxx"

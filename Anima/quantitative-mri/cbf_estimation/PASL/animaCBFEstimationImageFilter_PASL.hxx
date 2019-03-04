@@ -1,5 +1,5 @@
 #pragma once
-#include "animaCBFEstimationImageFilter.h"
+#include "animaCBFEstimationImageFilter_PASL.h"
 
 #include <itkImageRegionIterator.h>
 #include <itkImageRegionConstIteratorWithIndex.h>
@@ -10,7 +10,7 @@ namespace anima
 
 template <class InputPixelType, class OutputPixelType>
 void
-CBFEstimationImageFilter <InputPixelType,OutputPixelType>
+CBFEstimationImageFilter_PASL <InputPixelType,OutputPixelType>
 ::BeforeThreadedGenerateData ()
 {
     this->Superclass::BeforeThreadedGenerateData();
@@ -30,7 +30,7 @@ CBFEstimationImageFilter <InputPixelType,OutputPixelType>
 
 template <class InputPixelType, class OutputPixelType>
 void
-CBFEstimationImageFilter <InputPixelType,OutputPixelType>
+CBFEstimationImageFilter_PASL <InputPixelType,OutputPixelType>
 ::ThreadedGenerateData (const OutputImageRegionType &outputRegionForThread, itk::ThreadIdType threadId)
 {
     typedef itk::ImageRegionConstIteratorWithIndex <InputImageType> InputImageIteratorType;
@@ -43,7 +43,7 @@ CBFEstimationImageFilter <InputPixelType,OutputPixelType>
     OutputImageIteratorType outItr(this->GetOutput(0),outputRegionForThread);
     
     IndexType currentIndex;
-    double logConstantValue = std::log(6.0e6) + std::log(m_LambdaParameter) - std::log(2) - std::log(m_AlphaParameter) - std::log(m_BloodT1) - std::log(1.0 - std::exp(- m_LabelDuration / m_BloodT1));
+    double logConstantValue = std::log(6.0e6) + std::log(m_LambdaParameter) - std::log(m_AlphaParameter) - std::log(m_TI1);
 
     while (!inputItr.IsAtEnd())
     {
@@ -58,7 +58,7 @@ CBFEstimationImageFilter <InputPixelType,OutputPixelType>
         }
 
         currentIndex = inputItr.GetIndex();
-        double currentPLD = currentIndex[InputImageType::ImageDimension - 1] * m_SliceDelay + m_BasePostLabelingDelay;
+        double currentTI2 = currentIndex[InputImageType::ImageDimension - 1] * m_SliceDelay + m_BaseTI2;
 
         double logM0 = std::log(1.0e-16);
         if (m0Itr.Get() > 1.0e-16)
@@ -68,7 +68,7 @@ CBFEstimationImageFilter <InputPixelType,OutputPixelType>
         if (inputItr.Get() > 1.0e-16)
             logInput = std::log(inputItr.Get());
 
-        double logCBFValue = logConstantValue + logInput - logM0 + currentPLD / m_BloodT1;
+        double logCBFValue = logConstantValue + logInput - logM0 + currentTI2 / m_BloodT1;
 
         double cbfValue = std::exp(logCBFValue);
         if (!std::isfinite(cbfValue))
