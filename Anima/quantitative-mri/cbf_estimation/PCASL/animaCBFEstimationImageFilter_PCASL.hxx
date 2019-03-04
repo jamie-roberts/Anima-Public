@@ -10,7 +10,7 @@ namespace anima
 
 template <class InputPixelType, class OutputPixelType>
 void
-CBFEstimationImageFilter <InputPixelType,OutputPixelType>
+CBFEstimationImageFilter_PCASL <InputPixelType,OutputPixelType>
 ::BeforeThreadedGenerateData ()
 {
     this->Superclass::BeforeThreadedGenerateData();
@@ -30,7 +30,7 @@ CBFEstimationImageFilter <InputPixelType,OutputPixelType>
 
 template <class InputPixelType, class OutputPixelType>
 void
-CBFEstimationImageFilter <InputPixelType,OutputPixelType>
+CBFEstimationImageFilter_PCASL <InputPixelType,OutputPixelType>
 ::ThreadedGenerateData (const OutputImageRegionType &outputRegionForThread, itk::ThreadIdType threadId)
 {
     typedef itk::ImageRegionConstIteratorWithIndex <InputImageType> InputImageIteratorType;

@@ -1,5 +1,5 @@
 #pragma once
-#include <animaMaskedImageToImageFilter_PCASL.h>
+#include <animaMaskedImageToImageFilter.h>
 #include <itkImage.h>
 
 namespace anima
@@ -9,12 +9,12 @@ namespace anima
  * @brief Implements simple CBF estimation for pCASL from a 3D volume and a set of acquisition related parameters
  */
 template <class InputPixelType, class OutputPixelType>
-class CBFEstimationImageFilter :
+class CBFEstimationImageFilter_PCASL :
 public anima::MaskedImageToImageFilter < itk::Image <InputPixelType, 3>, itk::Image <OutputPixelType, 3> >
 {
 public:
     /** Standard class typedefs. */
-    typedef CBFEstimationImageFilter Self;
+    typedef CBFEstimationImageFilter_PCASL Self;
     typedef itk::Image <InputPixelType, 3> InputImageType;
     typedef itk::Image <OutputPixelType, 3> OutputImageType;
     typedef anima::MaskedImageToImageFilter <InputImageType, OutputImageType> Superclass;
@@ -25,7 +25,7 @@ public:
     itkNewMacro(Self)
 
     /** Run-time type information (and related methods) */
-    itkTypeMacro(CBFEstimationImageFilter, anima::MaskedImageToImageFilter)
+    itkTypeMacro(CBFEstimationImageFilter_PCASL, anima::MaskedImageToImageFilter)
 
     /** Image typedef support */
     typedef typename InputImageType::Pointer InputImagePointer;
@@ -47,7 +47,7 @@ public:
     itkSetMacro(M0ConstantValue, double)
 
 protected:
-    CBFEstimationImageFilter()
+    CBFEstimationImageFilter_PCASL()
     {
         m_BloodT1 = 1650;
         m_AlphaParameter = 0.85;
@@ -59,7 +59,7 @@ protected:
         m_M0ConstantValue = 1000;
     }
 
-    virtual ~CBFEstimationImageFilter()
+    virtual ~CBFEstimationImageFilter_PCASL()
     {
     }
 
@@ -67,7 +67,7 @@ protected:
     void ThreadedGenerateData(const OutputImageRegionType &outputRegionForThread, itk::ThreadIdType threadId) ITK_OVERRIDE;
 
 private:
-    ITK_DISALLOW_COPY_AND_ASSIGN(CBFEstimationImageFilter);
+    ITK_DISALLOW_COPY_AND_ASSIGN(CBFEstimationImageFilter_PCASL);
 
     double m_BloodT1;
     double m_AlphaParameter, m_LambdaParameter;
@@ -81,4 +81,4 @@ private:
 
 } // end namespace anima
 
-#include "animaCBFEstimationImageFilter.hxx"
+#include "animaCBFEstimationImageFilter_PCASL.hxx"

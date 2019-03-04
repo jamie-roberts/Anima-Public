@@ -36,7 +36,7 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
     
-    typedef anima::CBFEstimationImageFilter <double, double> FilterType;
+    typedef anima::CBFEstimationImageFilter_PCASL <double, double> FilterType;
     
     FilterType::Pointer mainFilter = FilterType::New();
 	
