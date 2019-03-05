@@ -17,6 +17,7 @@ int main(int argc, char **argv)
     
     TCLAP::ValueArg<std::string> inputArg("i","inputimage","Input image",true,"","Input image",cmd);
     TCLAP::ValueArg<std::string> outputArg("o","outputimage","Output image",true,"","Output image",cmd);
+    TCLAP::ValueArg<std::string> outputArg2("O","outputimage2","Output image 2",true,"","Output image 2",cmd);
     TCLAP::ValueArg<double> quantileArg("q","quantile","quantile over temporal direction (between 0 and 1)",false,0.5,"quantile value",cmd);
 
     try
@@ -63,6 +64,14 @@ int main(int argc, char **argv)
     outputImage->SetRegions(outputRegion);
     outputImage->Allocate();
 
+    Image3DType::Pointer outputImage2 = Image3DType::New();
+    outputImage2->Initialize();
+    outputImage2->SetOrigin(outputOrigin);
+    outputImage2->SetSpacing(outputSpacing);
+    outputImage2->SetDirection(outputDirection);
+    outputImage2->SetRegions(outputRegion);
+    outputImage2->Allocate();
+
     Image4DType::RegionType tmpRegionInputImage = inputImage->GetLargestPossibleRegion();
     const unsigned int timeLength = tmpRegionInputImage.GetSize()[3];
 
@@ -77,13 +86,15 @@ int main(int argc, char **argv)
     }
 
     std::vector <double> tmpVec (timeLength);
-    unsigned int quantileInd = (unsigned int)floor(quantileArg.getValue()*timeLength);
-    if (quantileInd == timeLength)
-        quantileInd = timeLength - 1;
+    unsigned int quantileInd1 = (unsigned int)floor(quantileArg.getValue()*timeLength);
+    unsigned int quantileInd2 = (unsigned int)floor((1-quantileArg.getValue())*timeLength);
+    if (quantileInd1 == timeLength)
+        quantileInd1 = timeLength - 1;
+    if (quantileInd2 == timeLength)
+        quantileInd2 = timeLength - 1;
 
     while( !it.IsAtEnd() )
     {
-        double sum = 0;
         it.GoToBeginOfLine();
         index4D = it.GetIndex();
 
@@ -92,18 +103,31 @@ int main(int argc, char **argv)
             tmpVec[i] = it.Get();
             ++it;
         }
-        if (quantileInd != 0)
-        std::partial_sort(tmpVec.begin(),tmpVec.begin() + quantileInd + 1,tmpVec.end());
-        double quantileV = tmpVec[quantileInd];
 
+        std::sort(tmpVec.begin(),tmpVec.end());
+        double quantileV1 = tmpVec[quantileInd1];
+        double quantileV2 = tmpVec[quantileInd2];
+        double sum = 0;
+
+        it.GoToBeginOfLine();
+
+        for (unsigned int i = 0;i < timeLength;++i)
+        {
+            sum += std::max(std::min(it.Get(), max(quantileV1, quantileV2)), std::min(quantileV1, quantileV2)); 
+            ++it;
+        }
+        sum /= timeLength;
         index3D[0] = index4D[0];
         index3D[1] = index4D[1];
         index3D[2] = index4D[2];
 
-        outputImage->SetPixel( index3D, quantileV );
+        outputImage->SetPixel( index3D, sum );
+        outputImage2->SetPixel( index3D, quantileV1 );
+
         it.NextLine();
     }
 
     anima::writeImage <Image3DType> (outputArg.getValue(), outputImage);
+    anima::writeImage <Image3DType> (outputArg2.getValue(), outputImage2);
     return EXIT_SUCCESS;
 }
