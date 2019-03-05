@@ -16,9 +16,9 @@ int main(int argc, char **argv)
     TCLAP::CmdLine cmd("INRIA / IRISA - Visages Team", ' ',ANIMA_VERSION);
     
     TCLAP::ValueArg<std::string> inputArg("i","inputimage","Input image",true,"","Input image",cmd);
-    TCLAP::ValueArg<std::string> outputArg("o","outputimage","Output image",true,"","Output image",cmd);
-    TCLAP::ValueArg<std::string> outputArg2("O","outputimage2","Output image 2",true,"","Output image 2",cmd);
-    TCLAP::ValueArg<double> quantileArg("q","quantile","quantile over temporal direction (between 0 and 1)",false,0.5,"quantile value",cmd);
+    TCLAP::ValueArg<double> quantileArg("q","quantile","quantile (between 0 and 1)",false,0.5,"quantile value",cmd);
+    TCLAP::ValueArg<std::string> quantileImageArg("o","quantileImage","quantile image along temporal direction",false,"","quantile image",cmd);
+    TCLAP::ValueArg<std::string> meanImageArg("m","meanImage","robust average image along temporal direction",false,"","robust mean image",cmd);
 
     try
     {
@@ -56,21 +56,26 @@ int main(int argc, char **argv)
     } 
     outputRegion.SetSize(outputSize);
 
-    Image3DType::Pointer outputImage = Image3DType::New();
-    outputImage->Initialize();
-    outputImage->SetOrigin(outputOrigin);
-    outputImage->SetSpacing(outputSpacing);
-    outputImage->SetDirection(outputDirection);
-    outputImage->SetRegions(outputRegion);
-    outputImage->Allocate();
-
-    Image3DType::Pointer outputImage2 = Image3DType::New();
-    outputImage2->Initialize();
-    outputImage2->SetOrigin(outputOrigin);
-    outputImage2->SetSpacing(outputSpacing);
-    outputImage2->SetDirection(outputDirection);
-    outputImage2->SetRegions(outputRegion);
-    outputImage2->Allocate();
+    Image3DType::Pointer quantileImage = Image3DType::New();
+    if(quantileImageArg.getValue() != "")
+    {
+        quantileImage->Initialize();
+        quantileImage->SetOrigin(outputOrigin);
+        quantileImage->SetSpacing(outputSpacing);
+        quantileImage->SetDirection(outputDirection);
+        quantileImage->SetRegions(outputRegion);
+        quantileImage->Allocate();
+    }
+    Image3DType::Pointer meanImage = Image3DType::New();
+    if(meanImageArg.getValue() != "")
+    {
+        meanImage->Initialize();
+        meanImage->SetOrigin(outputOrigin);
+        meanImage->SetSpacing(outputSpacing);
+        meanImage->SetDirection(outputDirection);
+        meanImage->SetRegions(outputRegion);
+        meanImage->Allocate();
+    }
 
     Image4DType::RegionType tmpRegionInputImage = inputImage->GetLargestPossibleRegion();
     const unsigned int timeLength = tmpRegionInputImage.GetSize()[3];
@@ -109,25 +114,36 @@ int main(int argc, char **argv)
         double quantileV2 = tmpVec[quantileInd2];
         double sum = 0;
 
-        it.GoToBeginOfLine();
-
-        for (unsigned int i = 0;i < timeLength;++i)
+        if(meanImageArg.getValue() != "")
         {
-            sum += std::max(std::min(it.Get(), max(quantileV1, quantileV2)), std::min(quantileV1, quantileV2)); 
-            ++it;
+            it.GoToBeginOfLine();
+
+            for (unsigned int i = 0;i < timeLength;++i)
+            {
+                sum += std::max(std::min(it.Get(), max(quantileV1, quantileV2)), std::min(quantileV1, quantileV2)); 
+                ++it;
+            }
+            sum /= timeLength;
         }
-        sum /= timeLength;
+
         index3D[0] = index4D[0];
         index3D[1] = index4D[1];
         index3D[2] = index4D[2];
 
-        outputImage->SetPixel( index3D, sum );
-        outputImage2->SetPixel( index3D, quantileV1 );
+        if(quantileImageArg.getValue() != "")
+            quantileImage->SetPixel( index3D, quantileV1 );
+
+        if(meanImageArg.getValue() != "")
+            meanImage->SetPixel( index3D, sum );
 
         it.NextLine();
     }
+    
+    if(quantileImageArg.getValue() != "")
+        anima::writeImage <Image3DType> (quantileImageArg.getValue(), quantileImage);
 
-    anima::writeImage <Image3DType> (outputArg.getValue(), outputImage);
-    anima::writeImage <Image3DType> (outputArg2.getValue(), outputImage2);
+    if(meanImageArg.getValue() != "")
+        anima::writeImage <Image3DType> (meanImageArg.getValue(), meanImage);
+
     return EXIT_SUCCESS;
 }
