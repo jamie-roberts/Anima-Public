@@ -1,0 +1,22 @@
+<map id="animaMTPairingCorrelationImageToImageMetric.h" name="animaMTPairingCorrelationImageToImageMetric.h">
+<area shape="rect" id="node2" href="$animaBaseOrientedModelImageToImageMetric_8h.html" title="animaBaseOrientedModelImage\lToImageMetric.h" alt="" coords="243,95,449,136"/>
+<area shape="rect" id="node36" href="$animaMultiCompartmentModel_8h.html" title="animaMultiCompartmentModel.h" alt="" coords="1963,363,2171,389"/>
+<area shape="rect" id="node42" href="$animaMCMImage_8h.html" title="animaMCMImage.h" alt="" coords="2097,102,2232,129"/>
+<area shape="rect" id="node45" href="$animaMTPairingCorrelationImageToImageMetric_8hxx.html" title="animaMTPairingCorrelation\lImageToImageMetric.hxx" alt="" coords="1489,184,1667,225"/>
+<area shape="rect" id="node9" href="$animaBaseOrientedModelImageToImageMetric_8hxx.html" title="animaBaseOrientedModelImage\lToImageMetric.hxx" alt="" coords="243,184,449,225"/>
+<area shape="rect" id="node10" href="$animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="620,281,787,307"/>
+<area shape="rect" id="node16" href="$animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="614,363,793,389"/>
+<area shape="rect" id="node18" href="$animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="1247,594,1413,621"/>
+<area shape="rect" id="node28" href="$animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="732,437,896,464"/>
+<area shape="rect" id="node24" href="$animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="1349,683,1527,710"/>
+<area shape="rect" id="node26" href="$animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="1347,765,1527,792"/>
+<area shape="rect" id="node27" href="$animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1343,847,1535,874"/>
+<area shape="rect" id="node29" href="$animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="726,512,902,539"/>
+<area shape="rect" id="node30" href="$animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="757,587,967,628"/>
+<area shape="rect" id="node33" href="$animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="509,676,719,717"/>
+<area shape="rect" id="node34" href="$animaMatrixLogExp_8h.html" title="animaMatrixLogExp.h" alt="" coords="458,765,602,792"/>
+<area shape="rect" id="node37" href="$animaBaseCompartment_8h.html" title="animaBaseCompartment.h" alt="" coords="1847,437,2021,464"/>
+<area shape="rect" id="node41" href="$animaMCMConstants_8h.html" title="animaMCMConstants.h" alt="" coords="1953,594,2107,621"/>
+<area shape="rect" id="node44" href="$animaMCMImage_8hxx.html" title="animaMCMImage.hxx" alt="" coords="2249,191,2395,218"/>
+<area shape="rect" id="node47" href="$animaMultiCompartmentModelCreator_8h.html" title="animaMultiCompartmentModel\lCreator.h" alt="" coords="1781,273,1980,315"/>
+</map>

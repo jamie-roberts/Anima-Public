@@ -1,0 +1,19 @@
+<map id="animaEPGSignalSimulator.h" name="animaEPGSignalSimulator.h">
+<area shape="rect" id="node2" href="$animaB1T2RelaxometryDistributionCostFunction_8h.html" title="animaB1T2RelaxometryDistribution\lCostFunction.h" alt="" coords="260,80,483,121"/>
+<area shape="rect" id="node4" href="$animaGammaMixtureT2RelaxometryEstimationImageFilter_8hxx.html" title="animaGammaMixtureT2Relaxometry\lEstimationImageFilter.hxx" alt="" coords="5,169,236,211"/>
+<area shape="rect" id="node7" href="$animaGMMT2RelaxometryEstimationImageFilter_8hxx.html" title="animaGMMT2RelaxometryEstimation\lImageFilter.hxx" alt="" coords="506,169,741,211"/>
+<area shape="rect" id="node10" href="$animaMultiT2EPGRelaxometryCostFunction_8cxx.html" title="animaMultiT2EPGRelaxometry\lCostFunction.cxx" alt="" coords="556,80,755,121"/>
+<area shape="rect" id="node11" href="$animaT2EPGRelaxometryCostFunction_8cxx.html" title="animaT2EPGRelaxometryCost\lFunction.cxx" alt="" coords="779,80,975,121"/>
+<area shape="rect" id="node12" href="$animaMultiT2RelaxometryEstimationImageFilter_8hxx.html" title="animaMultiT2RelaxometryEstimation\lImageFilter.hxx" alt="" coords="999,80,1229,121"/>
+<area shape="rect" id="node15" href="$animaEPGSignalSimulator_8cxx.html" title="animaEPGSignalSimulator.cxx" alt="" coords="1254,87,1451,114"/>
+<area shape="rect" id="node16" href="$animaStimulatedSpinEchoImageFilter_8hxx.html" title="animaStimulatedSpinEchoImage\lFilter.hxx" alt="" coords="1475,80,1686,121"/>
+<area shape="rect" id="node3" href="$animaB1T2RelaxometryDistributionCostFunction_8cxx.html" title="animaB1T2RelaxometryDistribution\lCostFunction.cxx" alt="" coords="260,169,483,211"/>
+<area shape="rect" id="node5" href="$animaGammaMixtureT2RelaxometryEstimationImageFilter_8h.html" title="animaGammaMixtureT2Relaxometry\lEstimationImageFilter.h" alt="" coords="5,259,236,300"/>
+<area shape="rect" id="node6" href="$animaGammaMixtureT2RelaxometryEstimation_8cxx.html" title="animaGammaMixtureT2Relaxometry\lEstimation.cxx" alt="" coords="5,348,236,389"/>
+<area shape="rect" id="node8" href="$animaGMMT2RelaxometryEstimationImageFilter_8h.html" title="animaGMMT2RelaxometryEstimation\lImageFilter.h" alt="" coords="506,259,741,300"/>
+<area shape="rect" id="node9" href="$animaGMMT2RelaxometryEstimation_8cxx.html" title="animaGMMT2RelaxometryEstimation.cxx" alt="" coords="495,355,752,382"/>
+<area shape="rect" id="node13" href="$animaMultiT2RelaxometryEstimationImageFilter_8h.html" title="animaMultiT2RelaxometryEstimation\lImageFilter.h" alt="" coords="999,169,1229,211"/>
+<area shape="rect" id="node14" href="$animaMultiT2RelaxometryEstimation_8cxx.html" title="animaMultiT2RelaxometryEstimation.cxx" alt="" coords="987,266,1241,293"/>
+<area shape="rect" id="node17" href="$animaStimulatedSpinEchoImageFilter_8h.html" title="animaStimulatedSpinEchoImage\lFilter.h" alt="" coords="1475,169,1686,211"/>
+<area shape="rect" id="node18" href="$animaStimulatedSpinEchoSimulator_8cxx.html" title="animaStimulatedSpinEchoSimulator.cxx" alt="" coords="1455,266,1706,293"/>
+</map>

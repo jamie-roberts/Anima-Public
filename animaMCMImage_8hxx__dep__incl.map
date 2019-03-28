@@ -1,0 +1,33 @@
+<map id="animaMCMImage.hxx" name="animaMCMImage.hxx">
+<area shape="rect" id="node2" href="$animaMCMImage_8h.html" title="animaMCMImage.h" alt="" coords="1793,80,1927,107"/>
+<area shape="rect" id="node3" href="$animaMCMEstimatorImageFilter_8h.html" title="animaMCMEstimatorImageFilter.h" alt="" coords="1206,162,1423,189"/>
+<area shape="rect" id="node6" href="$animaMCMAverageImagesImageFilter_8h.html" title="animaMCMAverageImagesImage\lFilter.h" alt="" coords="133,155,347,196"/>
+<area shape="rect" id="node9" href="$animaMCMFileReader_8h.html" title="animaMCMFileReader.h" alt="" coords="603,162,763,189"/>
+<area shape="rect" id="node15" href="$animaMCMFileWriter_8h.html" title="animaMCMFileWriter.h" alt="" coords="1510,162,1663,189"/>
+<area shape="rect" id="node18" href="$animaPyramidalDenseMCMSVFMatchingBridge_8h.html" title="animaPyramidalDenseMCMSVFMatching\lBridge.h" alt="" coords="1411,408,1669,449"/>
+<area shape="rect" id="node19" href="$animaMCMBlockMatchInitializer_8h.html" title="animaMCMBlockMatchInitializer.h" alt="" coords="1751,162,1969,189"/>
+<area shape="rect" id="node23" href="$animaMCMResampleImageFilter_8hxx.html" title="animaMCMResampleImageFilter.hxx" alt="" coords="3291,162,3523,189"/>
+<area shape="rect" id="node25" href="$animaMCMCorrelationImageToImageMetric_8h.html" title="animaMCMCorrelationImage\lToImageMetric.h" alt="" coords="2772,155,2959,196"/>
+<area shape="rect" id="node27" href="$animaMCMMeanSquaresImageToImageMetric_8h.html" title="animaMCMMeanSquaresImage\lToImageMetric.h" alt="" coords="2000,155,2203,196"/>
+<area shape="rect" id="node29" href="$animaMCMPairingMeanSquaresImageToImageMetric_8h.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.h" alt="" coords="2227,155,2434,196"/>
+<area shape="rect" id="node31" href="$animaMTPairingCorrelationImageToImageMetric_8h.html" title="animaMTPairingCorrelation\lImageToImageMetric.h" alt="" coords="2569,155,2748,196"/>
+<area shape="rect" id="node4" href="$animaMCMEstimator_8cxx.html" title="animaMCMEstimator.cxx" alt="" coords="1011,251,1175,278"/>
+<area shape="rect" id="node5" href="$animaMCMEstimatorImageFilter_8hxx.html" title="animaMCMEstimatorImageFilter.hxx" alt="" coords="1200,251,1429,278"/>
+<area shape="rect" id="node7" href="$animaMCMAverageImages_8cxx.html" title="animaMCMAverageImages.cxx" alt="" coords="687,251,886,278"/>
+<area shape="rect" id="node8" href="$animaMCMAverageImagesImageFilter_8hxx.html" title="animaMCMAverageImagesImage\lFilter.hxx" alt="" coords="5,244,219,285"/>
+<area shape="rect" id="node10" href="$animaMCMFileReader_8cxx.html" title="animaMCMFileReader.cxx" alt="" coords="491,251,663,278"/>
+<area shape="rect" id="node11" href="$animaMCMFileReader_8hxx.html" title="animaMCMFileReader.hxx" alt="" coords="243,251,415,278"/>
+<area shape="rect" id="node12" href="$animaDenseMCMSVFBMRegistration_8cxx.html" title="animaDenseMCMSVFBMRegistration.cxx" alt="" coords="768,505,1027,531"/>
+<area shape="rect" id="node13" href="$animaMCMApplyTransformSerie_8cxx.html" title="animaMCMApplyTransformSerie.cxx" alt="" coords="1351,333,1582,360"/>
+<area shape="rect" id="node14" href="$animaMCMMeasureTest_8cxx.html" title="animaMCMMeasureTest.cxx" alt="" coords="2459,251,2643,278"/>
+<area shape="rect" id="node16" href="$animaMCMFileWriter_8hxx.html" title="animaMCMFileWriter.hxx" alt="" coords="1504,251,1669,278"/>
+<area shape="rect" id="node17" href="$animaPyramidalDenseMCMSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseMCMSVFMatching\lBridge.hxx" alt="" coords="1493,497,1752,539"/>
+<area shape="rect" id="node20" href="$animaMCMBlockMatcher_8hxx.html" title="animaMCMBlockMatcher.hxx" alt="" coords="2667,251,2858,278"/>
+<area shape="rect" id="node22" href="$animaMCMBlockMatchInitializer_8hxx.html" title="animaMCMBlockMatchInitializer.hxx" alt="" coords="1745,251,1975,278"/>
+<area shape="rect" id="node21" href="$animaMCMBlockMatcher_8h.html" title="animaMCMBlockMatcher.h" alt="" coords="2673,333,2852,360"/>
+<area shape="rect" id="node24" href="$animaMCMResampleImageFilter_8h.html" title="animaMCMResampleImageFilter.h" alt="" coords="3297,251,3517,278"/>
+<area shape="rect" id="node26" href="$animaMCMCorrelationImageToImageMetric_8hxx.html" title="animaMCMCorrelationImage\lToImageMetric.hxx" alt="" coords="3085,244,3272,285"/>
+<area shape="rect" id="node28" href="$animaMCMMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMMeanSquaresImage\lToImageMetric.hxx" alt="" coords="2000,244,2203,285"/>
+<area shape="rect" id="node30" href="$animaMCMPairingMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.hxx" alt="" coords="2227,244,2434,285"/>
+<area shape="rect" id="node32" href="$animaMTPairingCorrelationImageToImageMetric_8hxx.html" title="animaMTPairingCorrelation\lImageToImageMetric.hxx" alt="" coords="2883,244,3061,285"/>
+</map>

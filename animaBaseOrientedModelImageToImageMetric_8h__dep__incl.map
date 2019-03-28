@@ -1,0 +1,28 @@
+<map id="animaBaseOrientedModelImageToImageMetric.h" name="animaBaseOrientedModelImageToImageMetric.h">
+<area shape="rect" id="node2" href="$animaMCMBlockMatcher_8hxx.html" title="animaMCMBlockMatcher.hxx" alt="" coords="443,191,634,218"/>
+<area shape="rect" id="node7" href="$animaTensorBlockMatcher_8hxx.html" title="animaTensorBlockMatcher.hxx" alt="" coords="1521,191,1719,218"/>
+<area shape="rect" id="node12" href="$animaBaseOrientedModelImageToImageMetric_8hxx.html" title="animaBaseOrientedModelImage\lToImageMetric.hxx" alt="" coords="2057,95,2263,136"/>
+<area shape="rect" id="node13" href="$animaMCMCorrelationImageToImageMetric_8h.html" title="animaMCMCorrelationImage\lToImageMetric.h" alt="" coords="264,95,451,136"/>
+<area shape="rect" id="node16" href="$animaMCMMeanSquaresImageToImageMetric_8h.html" title="animaMCMMeanSquaresImage\lToImageMetric.h" alt="" coords="475,95,677,136"/>
+<area shape="rect" id="node18" href="$animaMCMPairingMeanSquaresImageToImageMetric_8h.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.h" alt="" coords="867,95,1074,136"/>
+<area shape="rect" id="node20" href="$animaMTPairingCorrelationImageToImageMetric_8h.html" title="animaMTPairingCorrelation\lImageToImageMetric.h" alt="" coords="1099,95,1277,136"/>
+<area shape="rect" id="node22" href="$animaTensorCorrelationImageToImageMetric_8h.html" title="animaTensorCorrelationImage\lToImageMetric.h" alt="" coords="1301,95,1496,136"/>
+<area shape="rect" id="node24" href="$animaTensorGeneralizedCorrelationImageToImageMetric_8h.html" title="animaTensorGeneralizedCorrelation\lImageToImageMetric.h" alt="" coords="1571,95,1797,136"/>
+<area shape="rect" id="node26" href="$animaTensorMeanSquaresImageToImageMetric_8h.html" title="animaTensorMeanSquaresImage\lToImageMetric.h" alt="" coords="1821,95,2032,136"/>
+<area shape="rect" id="node3" href="$animaMCMBlockMatcher_8h.html" title="animaMCMBlockMatcher.h" alt="" coords="449,273,628,300"/>
+<area shape="rect" id="node4" href="$animaPyramidalDenseMCMSVFMatchingBridge_8h.html" title="animaPyramidalDenseMCMSVFMatching\lBridge.h" alt="" coords="409,348,668,389"/>
+<area shape="rect" id="node5" href="$animaDenseMCMSVFBMRegistration_8cxx.html" title="animaDenseMCMSVFBMRegistration.cxx" alt="" coords="692,445,951,471"/>
+<area shape="rect" id="node6" href="$animaPyramidalDenseMCMSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseMCMSVFMatching\lBridge.hxx" alt="" coords="409,437,668,479"/>
+<area shape="rect" id="node8" href="$animaTensorBlockMatcher_8h.html" title="animaTensorBlockMatcher.h" alt="" coords="1527,273,1713,300"/>
+<area shape="rect" id="node9" href="$animaPyramidalDenseTensorSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.hxx" alt="" coords="1525,348,1715,389"/>
+<area shape="rect" id="node10" href="$animaPyramidalDenseTensorSVFMatchingBridge_8h.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.h" alt="" coords="1525,437,1715,479"/>
+<area shape="rect" id="node11" href="$animaDenseTensorSVFBMRegistration_8cxx.html" title="animaDenseTensorSVFBMRegistration.cxx" alt="" coords="1487,527,1753,553"/>
+<area shape="rect" id="node14" href="$animaMCMCorrelationImageToImageMetric_8hxx.html" title="animaMCMCorrelationImage\lToImageMetric.hxx" alt="" coords="5,184,192,225"/>
+<area shape="rect" id="node15" href="$animaMCMMeasureTest_8cxx.html" title="animaMCMMeasureTest.cxx" alt="" coords="659,191,843,218"/>
+<area shape="rect" id="node17" href="$animaMCMMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMMeanSquaresImage\lToImageMetric.hxx" alt="" coords="216,184,419,225"/>
+<area shape="rect" id="node19" href="$animaMCMPairingMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.hxx" alt="" coords="867,184,1074,225"/>
+<area shape="rect" id="node21" href="$animaMTPairingCorrelationImageToImageMetric_8hxx.html" title="animaMTPairingCorrelation\lImageToImageMetric.hxx" alt="" coords="1099,184,1277,225"/>
+<area shape="rect" id="node23" href="$animaTensorCorrelationImageToImageMetric_8hxx.html" title="animaTensorCorrelationImage\lToImageMetric.hxx" alt="" coords="1301,184,1496,225"/>
+<area shape="rect" id="node25" href="$animaTensorGeneralizedCorrelationImageToImageMetric_8hxx.html" title="animaTensorGeneralizedCorrelation\lImageToImageMetric.hxx" alt="" coords="1744,184,1971,225"/>
+<area shape="rect" id="node27" href="$animaTensorMeanSquaresImageToImageMetric_8hxx.html" title="animaTensorMeanSquaresImage\lToImageMetric.hxx" alt="" coords="1995,184,2205,225"/>
+</map>

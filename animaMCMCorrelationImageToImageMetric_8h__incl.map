@@ -1,0 +1,20 @@
+<map id="animaMCMCorrelationImageToImageMetric.h" name="animaMCMCorrelationImageToImageMetric.h">
+<area shape="rect" id="node2" href="$animaBaseOrientedModelImageToImageMetric_8h.html" title="animaBaseOrientedModelImage\lToImageMetric.h" alt="" coords="1507,95,1713,136"/>
+<area shape="rect" id="node27" href="$animaMultiCompartmentModel_8h.html" title="animaMultiCompartmentModel.h" alt="" coords="1055,370,1263,397"/>
+<area shape="rect" id="node33" href="$animaMCMImage_8h.html" title="animaMCMImage.h" alt="" coords="2439,102,2573,129"/>
+<area shape="rect" id="node36" href="$animaMCMCorrelationImageToImageMetric_8hxx.html" title="animaMCMCorrelationImage\lToImageMetric.hxx" alt="" coords="882,184,1069,225"/>
+<area shape="rect" id="node9" href="$animaBaseOrientedModelImageToImageMetric_8hxx.html" title="animaBaseOrientedModelImage\lToImageMetric.hxx" alt="" coords="1904,184,2111,225"/>
+<area shape="rect" id="node10" href="$animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="1876,281,2043,307"/>
+<area shape="rect" id="node16" href="$animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="1870,370,2049,397"/>
+<area shape="rect" id="node18" href="$animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="1881,452,2048,479"/>
+<area shape="rect" id="node26" href="$animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="1481,452,1645,479"/>
+<area shape="rect" id="node24" href="$animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="2142,534,2321,561"/>
+<area shape="rect" id="node28" href="$animaBaseCompartment_8h.html" title="animaBaseCompartment.h" alt="" coords="1196,452,1371,479"/>
+<area shape="rect" id="node32" href="$animaMCMConstants_8h.html" title="animaMCMConstants.h" alt="" coords="597,534,751,561"/>
+<area shape="rect" id="node35" href="$animaMCMImage_8hxx.html" title="animaMCMImage.hxx" alt="" coords="2590,191,2737,218"/>
+<area shape="rect" id="node38" href="$animaMultiCompartmentModelCreator_8h.html" title="animaMultiCompartmentModel\lCreator.h" alt="" coords="1375,273,1573,315"/>
+<area shape="rect" id="node41" href="$animaMultiTensorSmoothingCostFunction_8h.html" title="animaMultiTensorSmoothing\lCostFunction.h" alt="" coords="1013,273,1199,315"/>
+<area shape="rect" id="node43" href="$animaApproximateMCMSmoothingCostFunction_8h.html" title="animaApproximateMCMSmoothing\lCostFunction.h" alt="" coords="555,273,777,315"/>
+<area shape="rect" id="node44" href="$animaNLOPTOptimizers_8h.html" title="animaNLOPTOptimizers.h" alt="" coords="226,452,397,479"/>
+<area shape="rect" id="node48" href="$animaNLOPTParametersConstraintFunction_8h.html" title="animaNLOPTParametersConstraint\lFunction.h" alt="" coords="349,527,573,568"/>
+</map>

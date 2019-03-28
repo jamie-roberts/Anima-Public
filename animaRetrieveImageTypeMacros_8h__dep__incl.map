@@ -1,0 +1,10 @@
+<map id="animaRetrieveImageTypeMacros.h" name="animaRetrieveImageTypeMacros.h">
+<area shape="rect" id="node2" href="$animaFlipTensors_8cxx.html" title="animaFlipTensors.cxx" alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node3" href="$animaNoiseGenerator_8cxx.html" title="animaNoiseGenerator.cxx" alt="" coords="175,80,343,107"/>
+<area shape="rect" id="node4" href="$animaNyulStandardization_8cxx.html" title="animaNyulStandardization.cxx" alt="" coords="368,80,561,107"/>
+<area shape="rect" id="node5" href="$animaCollapseImage_8cxx.html" title="animaCollapseImage.cxx" alt="" coords="585,80,749,107"/>
+<area shape="rect" id="node6" href="$animaConvertImage_8cxx.html" title="animaConvertImage.cxx" alt="" coords="773,80,932,107"/>
+<area shape="rect" id="node7" href="$animaCropImage_8cxx.html" title="animaCropImage.cxx" alt="" coords="956,80,1099,107"/>
+<area shape="rect" id="node8" href="$animaVectorizeImages_8cxx.html" title="animaVectorizeImages.cxx" alt="" coords="1123,80,1297,107"/>
+<area shape="rect" id="node9" href="$animaApplyTransformSerie_8cxx.html" title="animaApplyTransformSerie.cxx" alt="" coords="1321,80,1520,107"/>
+</map>

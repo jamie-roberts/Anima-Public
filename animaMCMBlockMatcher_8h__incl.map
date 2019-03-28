@@ -1,0 +1,32 @@
+<map id="animaMCMBlockMatcher.h" name="animaMCMBlockMatcher.h">
+<area shape="rect" id="node2" href="$animaBaseAffineBlockMatcher_8h.html" title="animaBaseAffineBlockMatcher.h" alt="" coords="1004,80,1211,107"/>
+<area shape="rect" id="node16" href="$animaMultiCompartmentModel_8h.html" title="animaMultiCompartmentModel.h" alt="" coords="2769,341,2977,367"/>
+<area shape="rect" id="node27" href="$animaMCMLinearInterpolateImageFunction_8h.html" title="animaMCMLinearInterpolate\lImageFunction.h" alt="" coords="2019,155,2203,196"/>
+<area shape="rect" id="node32" href="$animaMCMBlockMatcher_8hxx.html" title="animaMCMBlockMatcher.hxx" alt="" coords="3435,80,3625,107"/>
+<area shape="rect" id="node3" href="$animaBaseBlockMatcher_8h.html" title="animaBaseBlockMatcher.h" alt="" coords="1334,162,1510,189"/>
+<area shape="rect" id="node11" href="$animaBaseAffineBlockMatcher_8hxx.html" title="animaBaseAffineBlockMatcher.hxx" alt="" coords="579,162,798,189"/>
+<area shape="rect" id="node4" href="$animaBaseTransformAgregator_8h.html" title="animaBaseTransformAgregator.h" alt="" coords="899,251,1110,278"/>
+<area shape="rect" id="node9" href="$animaBaseBlockMatcher_8hxx.html" title="animaBaseBlockMatcher.hxx" alt="" coords="1328,251,1516,278"/>
+<area shape="rect" id="node10" href="$animaBlockMatchInitializer_8h.html" title="animaBlockMatchInitializer.h" alt="" coords="1557,341,1743,367"/>
+<area shape="rect" id="node13" href="$animaLogRigid3DTransform_8h.html" title="animaLogRigid3DTransform.h" alt="" coords="271,251,461,278"/>
+<area shape="rect" id="node14" href="$animaSplitAffine3DTransform_8h.html" title="animaSplitAffine3DTransform.h" alt="" coords="485,251,684,278"/>
+<area shape="rect" id="node15" href="$animaDirectionScaleSkewTransform_8h.html" title="animaDirectionScaleSkewTransform.h" alt="" coords="5,251,247,278"/>
+<area shape="rect" id="node17" href="$animaBaseCompartment_8h.html" title="animaBaseCompartment.h" alt="" coords="2803,423,2977,449"/>
+<area shape="rect" id="node25" href="$animaMCMConstants_8h.html" title="animaMCMConstants.h" alt="" coords="3589,497,3743,524"/>
+<area shape="rect" id="node29" href="$animaMCMWeightedAverager_8h.html" title="animaMCMWeightedAverager.h" alt="" coords="2010,251,2213,278"/>
+<area shape="rect" id="node31" href="$animaMCMLinearInterpolateImageFunction_8hxx.html" title="animaMCMLinearInterpolate\lImageFunction.hxx" alt="" coords="1751,244,1935,285"/>
+<area shape="rect" id="node33" href="$animaMCMPairingMeanSquaresImageToImageMetric_8h.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.h" alt="" coords="3427,155,3633,196"/>
+<area shape="rect" id="node34" href="$animaBaseOrientedModelImageToImageMetric_8h.html" title="animaBaseOrientedModelImage\lToImageMetric.h" alt="" coords="4013,244,4220,285"/>
+<area shape="rect" id="node42" href="$animaMCMMeanSquaresImageToImageMetric_8h.html" title="animaMCMMeanSquaresImage\lToImageMetric.h" alt="" coords="2989,155,3191,196"/>
+<area shape="rect" id="node45" href="$animaMCMCorrelationImageToImageMetric_8h.html" title="animaMCMCorrelationImage\lToImageMetric.h" alt="" coords="4021,155,4207,196"/>
+<area shape="rect" id="node47" href="$animaMTPairingCorrelationImageToImageMetric_8h.html" title="animaMTPairingCorrelation\lImageToImageMetric.h" alt="" coords="3683,155,3862,196"/>
+<area shape="rect" id="node49" href="$animaMCMBlockMatchInitializer_8h.html" title="animaMCMBlockMatchInitializer.h" alt="" coords="2689,162,2907,189"/>
+<area shape="rect" id="node40" href="$animaMCMImage_8h.html" title="animaMCMImage.h" alt="" coords="3216,251,3351,278"/>
+<area shape="rect" id="node41" href="$animaMCMPairingMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.hxx" alt="" coords="3427,244,3633,285"/>
+<area shape="rect" id="node39" href="$animaBaseOrientedModelImageToImageMetric_8hxx.html" title="animaBaseOrientedModelImage\lToImageMetric.hxx" alt="" coords="3921,333,4128,375"/>
+<area shape="rect" id="node43" href="$animaMCML2DistanceComputer_8h.html" title="animaMCML2DistanceComputer.h" alt="" coords="2237,251,2455,278"/>
+<area shape="rect" id="node44" href="$animaMCMMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMMeanSquaresImage\lToImageMetric.hxx" alt="" coords="2989,244,3191,285"/>
+<area shape="rect" id="node46" href="$animaMCMCorrelationImageToImageMetric_8hxx.html" title="animaMCMCorrelationImage\lToImageMetric.hxx" alt="" coords="4245,244,4431,285"/>
+<area shape="rect" id="node48" href="$animaMTPairingCorrelationImageToImageMetric_8hxx.html" title="animaMTPairingCorrelation\lImageToImageMetric.hxx" alt="" coords="3709,244,3887,285"/>
+<area shape="rect" id="node50" href="$animaMCMBlockMatchInitializer_8hxx.html" title="animaMCMBlockMatchInitializer.hxx" alt="" coords="2683,251,2913,278"/>
+</map>

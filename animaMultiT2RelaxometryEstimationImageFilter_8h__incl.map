@@ -1,0 +1,17 @@
+<map id="animaMultiT2RelaxometryEstimationImageFilter.h" name="animaMultiT2RelaxometryEstimationImageFilter.h">
+<area shape="rect" id="node2" href="$animaMaskedImageToImageFilter_8h.html" title="animaMaskedImageToImageFilter.h" alt="" coords="509,191,737,218"/>
+<area shape="rect" id="node13" href="$animaNNLSOptimizer_8h.html" title="animaNNLSOptimizer.h" alt="" coords="3563,191,3719,218"/>
+<area shape="rect" id="node22" href="$animaNonLocalT2DistributionPatchSearcher_8h.html" title="animaNonLocalT2Distribution\lPatchSearcher.h" alt="" coords="2977,95,3168,136"/>
+<area shape="rect" id="node28" href="$animaMultiT2RelaxometryEstimationImageFilter_8hxx.html" title="animaMultiT2RelaxometryEstimation\lImageFilter.hxx" alt="" coords="1649,95,1880,136"/>
+<area shape="rect" id="node9" href="$animaMaskedImageToImageFilter_8hxx.html" title="animaMaskedImageToImageFilter.hxx" alt="" coords="503,281,743,307"/>
+<area shape="rect" id="node17" href="$animaCholeskyDecomposition_8h.html" title="animaCholeskyDecomposition.h" alt="" coords="3893,281,4097,307"/>
+<area shape="rect" id="node23" href="$animaNonLocalPatchBaseSearcher_8h.html" title="animaNonLocalPatchBaseSearcher.h" alt="" coords="2508,191,2744,218"/>
+<area shape="rect" id="node27" href="$animaNonLocalT2DistributionPatchSearcher_8hxx.html" title="animaNonLocalT2Distribution\lPatchSearcher.hxx" alt="" coords="2977,184,3168,225"/>
+<area shape="rect" id="node25" href="$animaNonLocalPatchBaseSearcher_8hxx.html" title="animaNonLocalPatchBaseSearcher.hxx" alt="" coords="2487,281,2735,307"/>
+<area shape="rect" id="node30" href="$animaEPGSignalSimulator_8h.html" title="animaEPGSignalSimulator.h" alt="" coords="2768,191,2953,218"/>
+<area shape="rect" id="node32" href="$animaNLOPTOptimizers_8h.html" title="animaNLOPTOptimizers.h" alt="" coords="2143,191,2314,218"/>
+<area shape="rect" id="node40" href="$animaMultiT2EPGRelaxometryCostFunction_8h.html" title="animaMultiT2EPGRelaxometry\lCostFunction.h" alt="" coords="1665,184,1864,225"/>
+<area shape="rect" id="node43" href="$animaMeanAndVarianceImagesFilter_8h.html" title="animaMeanAndVarianceImages\lFilter.h" alt="" coords="1208,184,1412,225"/>
+<area shape="rect" id="node37" href="$animaNLOPTParametersConstraintFunction_8h.html" title="animaNLOPTParametersConstraint\lFunction.h" alt="" coords="2759,273,2983,315"/>
+<area shape="rect" id="node45" href="$animaMeanAndVarianceImagesFilter_8hxx.html" title="animaMeanAndVarianceImages\lFilter.hxx" alt="" coords="1208,273,1412,315"/>
+</map>

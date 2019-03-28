@@ -1,0 +1,4 @@
+<map id="anima::BaseMCMCost" name="anima::BaseMCMCost">
+<area shape="rect" id="node3" href="$classanima_1_1GaussianMCMCost.html" title="Class for computing marginal and profile costs and derivatives. This is not thread safe at all so be ..." alt="" coords="5,162,179,189"/>
+<area shape="rect" id="node4" href="$classanima_1_1GaussianMCMVariableProjectionCost.html" title="Class for computing variable projection costs and derivatives. Right now, it is only available for Ga..." alt="" coords="203,155,397,196"/>
+</map>
